@@ -1,0 +1,155 @@
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+        /* margin: 30mm 45mm 30mm 45mm; */
+    }
+}
+
+.page {
+    display: grid;
+    grid-template-areas: "cv-header cv-header cv-header  cv-header cv-header" "cv-body cv-body cv-body cv-body cv-sidebar" "cv-footer cv-footer cv-footer cv-footer cv-footer";
+    width: 21cm;
+    /* padding: 2rem; */
+    /* remove when printing, for test only, 850 * 1400 */
+    gap: 1rem;
+    font-family: Constantia, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+}
+
+.cv-header {
+    grid-area: cv-header;
+}
+
+.cv-sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: cv-sidebar;
+    gap: 1rem;
+}
+
+.cv-body {
+    display: flex;
+    flex-direction: column;
+    grid-area: cv-body;
+}
+
+.cv-footer {
+    grid-area: cv-footer;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    gap: 0.25rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.intro {
+    font-size: small;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.body-header {
+    text-transform: uppercase;
+    font-size: large;
+    color: rgb(11, 57, 83);
+}
+
+.company {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas: "job-emp job-emp job-emp tenure" "job-desc job-desc job-desc tenure" "job-skill job-skill job-skill job-skill";
+}
+
+
+/* .company>div {
+    padding: 0.5rem;
+} */
+
+.company-header {
+    font-size: medium;
+    grid-area: job-emp;
+    display: flex;
+    flex-direction: row;
+}
+
+.tenure-and-place {
+    font-size: x-small;
+    grid-area: tenure;
+    display: flex;
+    flex-direction: column;
+}
+
+.tenure-and-place>div {
+    text-align: right;
+}
+
+.job-skills {
+    grid-area: job-skill;
+    font-size: x-small;
+    font-weight: 300;
+}
+
+.job-desc {
+    grid-area: job-desc;
+    font-size: x-small;
+}
+
+.college {
+    display: grid;
+    grid-template-areas: "col-name col-name col-name col-name tenure" "degree degree degree degree tenure";
+}
+
+.col-name {
+    grid-area: col-name;
+}
+
+.degree {
+    grid-area: degree;
+    font-size: small;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.project {
+    display: grid;
+    grid-template-areas: "pname plink" "pdesc pdesc";
+}
+
+.project-name {
+    grid-area: pname;
+    font-size: small;
+}
+
+.project-link {
+    grid-area: plink;
+    font-size: x-small;
+    font-weight: 200;
+    text-align: right;
+}
+
+.project-desc {
+    grid-area: pdesc;
+    font-size: x-small;
+}
+
+.sub-stack {
+    font-size: small;
+}

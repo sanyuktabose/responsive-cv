@@ -153,3 +153,24 @@
 .sub-stack {
     font-size: small;
 }
+
+.certs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.cert {
+    display: grid;
+    grid-template-areas: "cname cname cname tenure" "cdesc cdesc cdesc cdesc";
+}
+
+.cert-name {
+    grid-area: cname;
+}
+
+.cdesc {
+    grid-area: cdesc;
+    font-size: x-small;
+    font-weight: 200;
+}

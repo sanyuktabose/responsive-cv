@@ -6,9 +6,14 @@
     }
 }
 
+.line {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
 .page {
     display: grid;
-    grid-template-areas: "cv-header cv-header cv-header  cv-header cv-header" "cv-body cv-body cv-body cv-body cv-sidebar" "cv-footer cv-footer cv-footer cv-footer cv-footer";
+    grid-template-areas: "cv-header cv-header" "cv-body cv-sidebar" "cv-footer cv-footer";
     width: 21cm;
     /* padding: 2rem; */
     /* remove when printing, for test only, 850 * 1400 */
@@ -18,6 +23,8 @@
 
 .cv-header {
     grid-area: cv-header;
+    display: flex;
+    flex-direction: column;
 }
 
 .cv-sidebar {
@@ -25,12 +32,14 @@
     flex-direction: column;
     grid-area: cv-sidebar;
     gap: 1rem;
+    width: 5cm;
 }
 
 .cv-body {
     display: flex;
     flex-direction: column;
     grid-area: cv-body;
+    width: 15cm;
 }
 
 .cv-footer {
@@ -70,8 +79,8 @@
 
 .company {
     display: grid;
-    gap: 0.5rem;
-    grid-template-areas: "job-emp job-emp job-emp tenure" "job-desc job-desc job-desc tenure";
+    /* gap: 0.5rem; */
+    grid-template-areas: "job-emp job-emp job-emp tenure" " . . . tenure" "job-desc job-desc job-desc job-desc";
 }
 
 
@@ -84,6 +93,7 @@
     grid-area: job-emp;
     display: flex;
     flex-direction: row;
+    font-weight: bold;
 }
 
 .tenure-and-place {
@@ -99,7 +109,7 @@
 
 .job-desc {
     grid-area: job-desc;
-    font-size: x-small;
+    font-size: small;
 }
 
 .college {
@@ -129,7 +139,7 @@
 
 .project-name {
     grid-area: pname;
-    font-size: small;
+    font-size: medium;
 }
 
 .project-link {
@@ -141,7 +151,7 @@
 
 .project-desc {
     grid-area: pdesc;
-    font-size: x-small;
+    font-size: small;
 }
 
 .sub-stack {

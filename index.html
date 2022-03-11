@@ -14,17 +14,21 @@
     <div class="page">
         <div class="cv-header">
             <h1>Pritam Prasad</h1>
-            <hr />
+            <div class="intro">
+                &nbsp;&nbsp;6+ years of experience in hands-oncoding/designing cloud-native full-stack systems, with area of interest in web security and cryptography. I bring in a strong comprehension on Backend API Development, scalable-systems design and monitoring,
+                domain-thinking, and understanding of proceses in healthcare and fintech domain.
+            </div>
+            <hr class="line" />
         </div>
         <div class="cv-sidebar">
             <div class="contact">
                 <div class="body-header">Contact Details</div>
                 <div>&#128205; Bengaluru, India</div>
-                <div>&#128231; mailpritamprasad@gmail.com</div>
                 <div>&#128222; +91-9577841342</div>
                 <div>&#128187; github.com/pritamprasd</div>
                 <div>&#128187; pritam.dev</div>
                 <div>&#128187; linkedin.com/in/pritamprasd</div>
+                <div>mailpritamprasad@gmail.com</div>
             </div>
             <div class="tech-stack">
                 <div class="body-header">Stack</div>
@@ -38,7 +42,7 @@
                     <span style="font-weight: bold;">Deployment:</span> Docker, Docker-Compose, Terraform, K8s(intermediate), Gitlab-pipeline, Jenkins, Github-Actions
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Persistance:</span> Postgresql, Redis, Elastiseach, MongoDB
+                    <span style="font-weight: bold;">Persistance:</span> Postgresql, Redis, Elasticsearch, MongoDB
                 </div>
                 <div class="sub-stack">
                     <span style="font-weight: bold;">Cloud:</span> AWS, Cloud-Foundry, GCP(basic), Cloudflare(pages, workers)
@@ -52,53 +56,56 @@
             </div>
         </div>
         <div class="cv-body">
-            <div class="intro">
-                &nbsp;&nbsp;6+ years of experience in hands-oncoding / designing cloud-native full-stack systems, with area of interest in web security and cryptography. I bring in a strong comprehension on Backend API Development, scalable-systems design and monitoring,
-                domain-thinking, and understanding of proceses in healthcare and fintech domain.
-            </div>
-            <hr />
             <div class="experience">
                 <div class="body-header">Work Experience</div>
                 <div class="company">
                     <div class="company-header">
-                        <div>Setu | <span style="font-weight: 300;">Investments BU</span> | </div>
-                        <div>SDE-III</div>
+                        Setu | <span style="font-weight: 300;">Investments BU</span> | SDE-III
                     </div>
                     <div class="tenure-and-place">
                         <div>Bengaluru</div>
-                        <div>Mar-2021</div>
-                        <div>-&nbsp;Present</div>
+                        <div>Mar-2021 - Present</div>
                     </div>
                     <div class="job-desc">
-                        <article>- E2E Design & development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google Spot(Native Google Pay offering), Standalone PWA(default UI offering), Web-SDK, webhook notifications)]</article>
-                        <article>&nbsp;&nbsp;- FD Gateway Integrations with Bank APIs and Payment stacks</article>
-                        <article>&nbsp;&nbsp;- FD Reconciliation process and lamdba based Automated Reporting service</article>
-                        <article>&nbsp;&nbsp;- Gitlab & Terraform based CI/CD setup for build and deployments.</article>
-                        <article>&nbsp;&nbsp;- Hot reload for configurations and Vault Integration, pluggable lib for masking PII data</article>
-                        <article>&nbsp;&nbsp;- eKYC/cKYC module design for FD verification(ECIES for encryption)</article>
-                        <article>&nbsp;&nbsp;- Monitoring and Alerting Infrastructure, Architectural Design and documentation(RFCs, ADRs).</article>
-                        <article>&nbsp;&nbsp;- Code migration from gunicorn to fastapi(uvicorn)</article>
-                        <article>- Platform library optimisations for logging, Auth, Error handling and Metric Collection.</article>
+                        <article>- E2E Design & development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google Spot (Playstore offering), Standalone PWA(default UI offering), Web-SDK, webhook notifications)]
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- FD Gateway Integrations with Bank APIs and Payment stacks
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- FD Reconciliation process and lamdba based Automated Reporting service
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Gitlab & Terraform based CI/CD setup for build and deployments.
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Hot reload for configurations and Vault Integration, pluggable lib for masking PII data</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- eKYC/cKYC module design for FD verification(ECIES for encryption)
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Monitoring and Alerting Infrastructure, Architectural Design and documentation(RFCs, ADRs).</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Code migration from gunicorn to fastapi(uvicorn)</article>
+                        <article>- Platform library optimisations for logging, Auth, Error handling and Metric Collection.
+                        </article>
                         <article>- Tech learning sessions, Tech-Interviews, mentoring juniors.</article>
                     </div>
                 </div>
                 <div class="company">
                     <div class="company-header">
-                        <div>JP Morgan Chase & Co. | <span style="font-weight: 300;">API Management Platform | SDE-II</div>
+                        <div>JP Morgan Chase & Co. | <span style="font-weight: 300;">API Mgmt. Platform</span> | SDE-II
+                        </div>
                     </div>
                     <div class="tenure-and-place">
                         <div>Bengaluru</div>
-                        <div>Jan-2019</div>
-                        <div>-&nbsp;Mar-2021</div>
+                        <div>Jan-2019 - Mar-2021</div>
+                        <!-- <div>-&nbsp;Mar-2021</div> -->
                     </div>
                     <div class="job-desc">
                         <article>- Worked on management & development of API First Design tooling for JPMC Central API Management Platform.</article>
-                        <article>&nbsp;&nbsp;- Development of Maven plugins for OpenAPI/Swagger custom validation and Scoring.</article>
-                        <article>&nbsp;&nbsp;- Java Libs to integrate A SpringBoot app to JPMC IDP through OpenAPI/Swagger Specs.</article>
-                        <article>&nbsp;&nbsp;- REST Spring-boot backend to simulate above maven-plugins/java-libs over https(client x509 cert auth)</article>
-                        <article>&nbsp;&nbsp;- BDD Integration test-suite(cucumber based) generation from OpenAPI/Swagger specs, and running on a dockerized container.</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Development of Maven plugins for OpenAPI/Swagger custom validation and Scoring.
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Java Libs to integrate A SpringBoot app to JPMC IDP through OpenAPI/Swagger Specs.</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- REST Spring-boot backend to simulate above maven-plugins/java-libs over https
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- BDD Integration test-suite(cucumber based) generation from OpenAPI/Swagger specs, and running on a dockerized container.</article>
                         <article>- Architectural design documentation, release notes, user guide.</article>
-                        <article>- Mentoring other teams on Firm's API design principles, API-Tooling product demo design, DEV-Seminar presentations.</article>
+                        <article>- Mentoring other teams on Firm's API design principles, API-Tooling product demo design.
+                        </article>
                     </div>
                 </div>
                 <div class="company">
@@ -107,22 +114,24 @@
                     </div>
                     <div class="tenure-and-place">
                         <div>Bengaluru</div>
-                        <div>Jun-2015</div>
-                        <div>-&nbsp;Dec-2018</div>
+                        <div>Jun-2015 - Dec-2018</div>
                     </div>
                     <div class="job-desc">
                         <article>- Feature development & Bug-fixes in MRI System:</article>
-                        <article>&nbsp;&nbsp;- Queue based system to authorize 3rd party remote calls to MRI devices.</article>
-                        <article>- Design & Development of Distributed protocol sharing & management platform for MRI devices:</article>
-                        <article>&nbsp;&nbsp;- Protocol to Internal Model mapping interface, Storage management of protocols with Postgresql.</article>
-                        <article>&nbsp;&nbsp;- REST API to allow CRUD on MRI Exam Protocols, org and role based access control.</article>
-                        <article>&nbsp;&nbsp;- Development of secure communication channel between MRI devices and REST API(used jsch lib).</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Queue based system to authorize 3rd party remote calls to MRI devices.
+                        </article>
+                        <article>- Design & Development of Distributed protocol sharing & management platform for MRI devices:
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Protocol to Internal Model mapping interface, Storage management of protocols with Postgresql.</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- REST API to allow CRUD on MRI Exam Protocols, org and role based access control.
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Development of secure communication channel between MRI devices and REST API(jsch lib).</article>
                     </div>
                 </div>
                 <!-- <div class="company">
                     <div class="company-header">
                         <div>C-DAC</div>
-                        <div>&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</div>
                         <div>Intern(HPC)</div>
                     </div>
                     <div class="tenure-and-place">
@@ -139,7 +148,6 @@
                 </div> -->
             </div>
         </div>
-        <hr />
         <div class="cv-footer">
             <div class="projects">
                 <div class="body-header">Projects</div>
@@ -147,28 +155,28 @@
                     <div class="project-name">Crypto Lending</div>
                     <div class="project-link">github.com/pritamprasd/crypto-lending</div>
                     <div class="project-desc">
-                        A demo-ready Money Lending platform where collateral are Crypto tokens and loan outcome management(defaulted/repaid) is governed by EVM Smart Contracts deployed on EVM based blockchains. The project also provides configurations to create and manage your
-                        own private EVM blockhain with block-chain visualizer integration. It connects lenders to borrowers in a P2P Defi manner.(EVM, Solidity, Flask, ReactJS)
+                        &nbsp;&nbsp;&nbsp;&nbsp;A demo-ready Money Lending platform where collateral are Crypto tokens and loan outcome management(defaulted/repaid) is governed by EVM Smart Contracts deployed on EVM based blockchains. The project also provides configurations
+                        to create and manage your own private EVM blockhain with block-chain visualizer integration. It connects lenders to borrowers in a P2P Defi manner.(EVM, Solidity, Flask, ReactJS)
                     </div>
                 </div>
                 <div class="project">
                     <div class="project-name">ECIES with Flask, ReactJS and WASM</div>
                     <div class="project-link">github.com/pritamprasd/poc-encrypt-flask-reactjs</div>
-                    <div class="project-desc">An example on how ephemeral asymmetric key based ECIES encryption/decryption can be done between a flask server and a react app. for performance reason a Web-Assembly compiled rust library is used as opposed to a JS lib.(ecc, wasm,
-                        js, python, rust) </div>
+                    <div class="project-desc">&nbsp;&nbsp;&nbsp;&nbsp;An example on how ephemeral asymmetric key based ECIES encryption/decryption can be done between a flask server and a react app. for performance reason a Web-Assembly compiled rust library is used as opposed
+                        to a JS lib.(ecc, wasm, js, python, rust) </div>
                 </div>
                 <div class="project">
                     <div class="project-name">Distributed E-Commerce system</div>
                     <div class="project-link">github.com/pritamprasd/e-commerce</div>
-                    <div class="project-desc">An experiment with synchronous system and event driven system using e-commerce as an example (Spring-Boot, ReactJS). </div>
+                    <div class="project-desc">&nbsp;&nbsp;&nbsp;&nbsp;An experiment with synchronous system and event driven system using e-commerce as an example (Spring-Boot, ReactJS). </div>
                 </div>
                 <div class="project">
                     <div class="project-name">Covid Dashboard</div>
                     <div class="project-link">github.com/pritamprasd/covid-dashboard</div>
-                    <div class="project-desc">Dashboard to visualize Covid19 India Data, with User login/Registration utlizes MaterialUI. (Java, SPring Boot, ReactJS, Postgresql). </div>
+                    <div class="project-desc">&nbsp;&nbsp;&nbsp;&nbsp;Dashboard to visualize Covid19 India Data, with User login/Registration utlizes MaterialUI. (Java, SPring Boot, ReactJS, Postgresql). </div>
                 </div>
             </div>
-            <hr />
+            <hr class="line" />
             <div class="education">
                 <div class="body-header">education</div>
                 <div class="college">
@@ -181,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <hr />
+            <!-- <hr class="line" />
             <div class="certs">
                 <div class="body-header">Certificates</div>
                 <div class="cert">
@@ -191,7 +199,7 @@
                     </div>
                     <div class="cdesc">https://bcert.me/sjzqssyg</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>

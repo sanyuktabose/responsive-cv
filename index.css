@@ -71,7 +71,7 @@
 .company {
     display: grid;
     gap: 0.5rem;
-    grid-template-areas: "job-emp job-emp job-emp tenure" "job-desc job-desc job-desc tenure" "job-skill job-skill job-skill job-skill";
+    grid-template-areas: "job-emp job-emp job-emp tenure" "job-desc job-desc job-desc tenure";
 }
 
 
@@ -95,12 +95,6 @@
 
 .tenure-and-place>div {
     text-align: right;
-}
-
-.job-skills {
-    grid-area: job-skill;
-    font-size: x-small;
-    font-weight: 300;
 }
 
 .job-desc {

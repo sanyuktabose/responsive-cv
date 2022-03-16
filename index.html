@@ -22,37 +22,47 @@
         </div>
         <div class="cv-sidebar">
             <div class="contact">
+                <!-- https://html-css-js.com/html/character-codes/ -->
                 <div class="body-header">Contact Details</div>
-                <div>&#128205; Bengaluru, India</div>
-                <div>&#128222; +91-9577841342</div>
-                <div>&#128187; github.com/pritamprasd</div>
-                <div>&#128187; pritam.dev</div>
-                <div>&#128187; linkedin.com/in/pritamprasd</div>
-                <div>mailpritamprasad@gmail.com</div>
+                <div>📌 Bengaluru, India</div>
+                <div>📲 +91-9577841342</div>
+                <div>💻 github.com/pritamprasd</div>
+                <div>💻 pritam.dev</div>
+                <div>💻 linkedin.com/in/pritamprasd</div>
+                <div>📧mailpritamprasad@gmail.com</div>
             </div>
             <div class="tech-stack">
                 <hr class="line" />
                 <div class="body-header">Tech Stack</div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Languages:</span> Python, Java, Go, Javascript, Solidity, Rust
+                    <span style="font-weight: bold;">Primary Languages:</span> Python, Java, Go, Typescript
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Frameworks:</span> Flask, Spring-Boot, Django, ReactTS, fastapi
+                    <span style="font-weight: bold;">Secondary Languages:</span> Solidity, C#, Rust, Shell-script, (html/css/js/wasm)
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Deployment:</span> Docker, Docker-Compose, Terraform, K8s, Gitlab-pipeline, Jenkins, Github-Actions
+                    <span style="font-weight: bold;">Frameworks:</span> Flask, Spring-Boot, ReactTS, fastapi
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Persistance:</span> Postgresql, Redis, Elasticsearch, MongoDB
+                    <span style="font-weight: bold;">Persistance:</span> Postgresql, Redis, Elasticsearch, DynamoDB, Cassandra
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Cloud:</span> AWS, Cloud-Foundry, GCP(basic), Cloudflare(pages, workers)
+                    <span style="font-weight: bold;">Messaging:</span> Redis-Pubsub, Kafka, RabbitMQ
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Security:</span> OAuth2, OIDC, Custom-JWT, ECC-cryptosystem
+                    <span style="font-weight: bold;">Cloud:</span> AWS, Cloud-Foundry, GCP(basic), Cloudflare
                 </div>
                 <div class="sub-stack">
-                    <span style="font-weight: bold;">Others:</span> Keycloak, Celery-Beat, OpenAPI, Kibana, Grafana, PlantUML
+                    <span style="font-weight: bold;">Security:</span> OAuth2, OIDC, JWT, ECC-cryptosystem, Keycloak
+                </div>
+                <div class="sub-stack">
+                    <span style="font-weight: bold;">APIs:</span> OpenAPI, GraphQL, gRPC(basic)
+                </div>
+                <div class="sub-stack">
+                    <span style="font-weight: bold;">DevOps:</span> Docker-Compose, Terraform, K8s(basic), Gitlab-pipeline, Jenkins, Github-Actions
+                </div>
+                <div class="sub-stack">
+                    <span style="font-weight: bold;">Others:</span> Celery, ELK/Grafana (lucene query and visualization)
                 </div>
             </div>
         </div>
@@ -70,20 +80,26 @@
                     <div class="job-desc">
                         <article>- End to End Design & development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google Spot (Playstore offering), Standalone PWA(default UI offering), Web-SDK, webhook notifications)]
                         </article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- FD Gateway Integrations with Bank APIs and Payment stacks
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- API Integrations with 4 supply-side partners(Bank APIs) and multiple demand-side clients.
                         </article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- FD Reconciliation process and lamdba based Automated Reporting service
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Multiple Payment stack API integartions and FD's Payment strategy.
                         </article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Gitlab & Terraform based CI/CD setup for build and deployments.
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- FD Reconciliation process and lamdba based Automated Reporting service which removed daily &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~1Hour manual work.
                         </article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Hot reload for configurations and Vault Integration, pluggable lib for masking PII data</article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- eKYC/cKYC module design for FD verification(ECIES for encryption)
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Gitlab & Terraform based CI/CD setup for build and deployments on ECS, reduced redeployment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; & rollbacks to automated/single click operation.
                         </article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Monitoring and Alerting Infrastructure, Architectural Design and documentation(RFCs, ADRs).</article>
-                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Code migration from gunicorn to fastapi(uvicorn)</article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Hot configurations reload and Vault Integration allowing to update application without restart.
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- eKYC/cKYC module re-design(UI & Backend) resulting in 2.5X less load time and ECIES based &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encryption over HTTPS for PII data.
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Monitoring and Alerting Infrastructure, Architectural Design and documentation(RFCs, ADRs).
+                        </article>
+                        <article>&nbsp;&nbsp;&nbsp;&nbsp;- Multitenant DB with exipiration policy for User Data storage.
+                        </article>
                         <article>- Platform library optimisations for logging, Auth, Error handling and Metric Collection.
                         </article>
-                        <article>- Tech learning sessions, Tech-Interviews, mentoring juniors.</article>
+                        <article>- Tech learning sessions, Tech-Interviews, mentoring juniors.
+                        </article>
                     </div>
                 </div>
                 <div class="company">
@@ -97,7 +113,7 @@
                         <!-- <div>-&nbsp;Mar-2021</div> -->
                     </div>
                     <div class="job-desc">
-                        <article>- Worked on management & development of API First Design tooling for JPMC Central API Management Platform.</article>
+                        <article>- Worked on release-management & development of API tooling for JPMC Central API Management Platform.</article>
                         <article>&nbsp;&nbsp;&nbsp;&nbsp;- Development of Maven plugins for OpenAPI/Swagger custom validation and Scoring.
                         </article>
                         <article>&nbsp;&nbsp;&nbsp;&nbsp;- Java Libs to integrate A Spring-boot app to JPMC IDP through OpenAPI/Swagger Specs.</article>
@@ -173,25 +189,24 @@
                     <div class="project-link">github.com/pritamprasd/e-commerce</div>
                     <div class="project-desc">&nbsp;&nbsp;&nbsp;&nbsp;An experiment with synchronous system and event driven system using e-commerce as an example (Spring-Boot, ReactJS). </div>
                 </div>
-                <div class="project">
+                <!-- <div class="project">
                     <div class="project-name">Covid Dashboard</div>
                     <div class="project-link">github.com/pritamprasd/covid-dashboard</div>
                     <div class="project-desc">&nbsp;&nbsp;&nbsp;&nbsp;Dashboard to visualize Covid19 India Data, with User login/Registration utlizes MaterialUI. (Java, SPring Boot, ReactJS, Postgresql). </div>
-                </div>
-            </div>
-            <hr class="line" />
-            <div class="education">
-                <div class="body-header">education</div>
-                <div class="college">
-                    <div class="col-name">National Institute of Technology Silchar</div>
-                    <div class="degree">B.Tech.(Computer Science & Engineering)</div>
-                    <div class="tenure-and-place">
-                        <div>Assam, India</div>
-                        <div>Jun-2011 - Mar-2015</div>
+                </div> -->
+                <hr class="line" />
+                <div class="education">
+                    <div class="body-header">education</div>
+                    <div class="college">
+                        <div class="col-name">National Institute of Technology Silchar</div>
+                        <div class="degree">B.Tech.(Computer Science & Engineering)</div>
+                        <div class="tenure-and-place">
+                            <div>Assam, India</div>
+                            <div>Jun-2011 - Mar-2015</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- <hr class="line" />
+                <!-- <hr class="line" />
             <div class="certs">
                 <div class="body-header">Certificates</div>
                 <div class="cert">
@@ -202,8 +217,8 @@
                     <div class="cdesc">https://bcert.me/sjzqssyg</div>
                 </div>
             </div> -->
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

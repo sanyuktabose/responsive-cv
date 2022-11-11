@@ -1,0 +1,49 @@
+.page{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-template-areas:    "intro  contact"
+                            "work  contact"                                 
+                            "work   skills"
+                            "education education"
+                            "projects projects";                             
+    gap: 0.2rem;
+    padding: 1rem;
+    width: 100vw;
+    max-width: 210mm;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:    "intro"
+                                "contact"
+                                "work"
+                                "projects"
+                                "skills"
+                                "education";
+    }
+}
+
+.name-and-intro{
+    grid-area: intro;
+}
+
+.contact-details{
+    grid-area: contact;
+}
+
+.tech_skills{
+    grid-area: skills;
+}
+
+.work-experience{
+    grid-area: work;
+}
+
+.projects-container{
+    grid-area: projects;
+}
+
+.education{
+    grid-area: education;
+}

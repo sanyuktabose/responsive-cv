@@ -1,0 +1,24 @@
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.school{
+    display: grid;
+    grid-template-areas:    "aa bb"
+                            "cc bb";
+    flex-direction: row;
+}
+
+.school-name{
+    grid-area: aa;    
+}
+
+.degree{
+    grid-area: cc;
+    font-size: x-small;
+}
+
+.place-and-date{
+    grid-area: bb;
+}

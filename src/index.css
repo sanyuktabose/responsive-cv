@@ -1,0 +1,32 @@
+:root{
+  --header-color: rgb(11, 57, 83);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Constantia, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif; */
+}
+
+.body-content {
+  font-size: small;
+}
+
+.line {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-right: 1rem;
+  display: none;
+}
+
+.header-text {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+svg{
+  height: 1rem;
+  width: 1rem;
+}

@@ -1,0 +1,18 @@
+.skills{
+    font-size: x-small;
+}
+
+.skill-header{
+    font-size: small;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skillset{
+    display: flex;
+    flex-direction: column;
+}

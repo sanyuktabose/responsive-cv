@@ -1,0 +1,20 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.project-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-link{
+    font-size: x-small;
+    opacity: 0.8;
+}
+
+.project-desc{
+    font-size: small;
+}

@@ -1,0 +1,18 @@
+.contact-details-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.25rem;
+    /* gap: 0.25rem; */
+}
+
+@media only screen and (min-width: 320px) {
+    .contact-details-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contact-details-content {
+        grid-template-columns: 1fr;
+    }
+}

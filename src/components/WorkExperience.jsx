@@ -6,7 +6,7 @@ export default function WorkExperience({companies}) {
     <div className='work-experience'>
         <div className="header-text">Work Experience</div>
         <div className='companies'>
-            {companies.map(c => <Company company={c}/>)}
+            {companies.map(c => <Company key={c['org_name']} company={c}/>)}
         </div>
         <hr className='line'/>
     </div>
@@ -26,7 +26,7 @@ function Company({company}){
                 </div>
             </div>
             <ul className='company-content'>
-                {company['desc'].map(d => <li>{d}</li>)}
+                {company['desc'].map(d => <li key={d}>{d}</li>)}
             </ul>            
         </div>
     );

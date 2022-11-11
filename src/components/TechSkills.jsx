@@ -6,7 +6,7 @@ export default function TechSkills({skills}) {
     <div className='tech-skills'>
         <div className="header-text">Tech Stack</div>
         <div className='skillset'>
-            {skills.map(s => <Skillset skillset={s}/>)}
+            {skills.map(s => <Skillset key={s['type']} skillset={s}/>)}
         </div>
     </div>
   )

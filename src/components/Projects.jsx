@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
         <div className='projects-container'>
             <div className="header-text">Other Projects</div>
             <div className='projects'>
-                {projects.map(p => <Project project={p} />)}
+                {projects.map(p => <Project key={p['name']} project={p} />)}
             </div>
         </div>
     )

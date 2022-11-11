@@ -6,7 +6,7 @@ export default function Education({ schools }) {
         <div className='education'>
             <div className="header-text">Education</div>
             <div className='schools'>
-                {schools.map(s => <School school={s} />)}
+                {schools.map(s => <School key={s['institute']} school={s} />)}
             </div>
             <hr className='line'/>
         </div>

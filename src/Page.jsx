@@ -8,24 +8,28 @@ import Education from './components/Education';
 import TechSkills from './components/TechSkills';
 
 const jsyaml = require('js-yaml');
-const config_url = 'https://gist.githubusercontent.com/pritamprasd/dc5f7deeccc69a21ef288e6903d833c7/raw/bcd92c750a4cde91aaf86e8955168791e06e6918/cv.yaml'
+const config_url = 'https://gist.githubusercontent.com/pritamprasd/dc5f7deeccc69a21ef288e6903d833c7/raw/d5a9af46875b3e998fbe7a11eaca141eea89d891/cv.yaml'
 
 export default function Page() {
-  const [data, setdata] = useState({});
+  const [data, setdata] = useState({
+    'contact': {
+      'name': ""
+    }
+  });
   useEffect(() => {
     fetch(config_url)
       .then(res => res.text())
       .then(yaml => {
         const json = jsyaml.load(yaml);
         setdata(json);
-        console.log(json);
+        // console.log(json);
       }).catch(e => console.error(e));
   }, []);
 
   return (
     <div className="page">
-      <NameHeader name="Pritam Prasad" introduction={data['introduction'] || []} />
-      <ContactDetails />
+      <NameHeader name={data['contact']['name'] || ""} introduction={data['introduction'] || []} />
+      <ContactDetails details={data['contact'] || {}}/>
       <TechSkills skills={data['tech_stack'] || []} />
       <WorkExperience companies={data['work_experience'] || []} />
       <Projects projects={data['projects'] || []} />

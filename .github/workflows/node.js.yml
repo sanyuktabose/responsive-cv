@@ -20,4 +20,15 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run build    
+    - run: npm run build
+    - name: Pushes to Github pages repo
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        #         SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+      with:
+        source-directory: 'build'
+        destination-github-username: 'pritamprasd'
+        destination-repository-name: 'pritamprasd.github.io'
+        user-email: mail@pritam.dev
+        target-branch: main

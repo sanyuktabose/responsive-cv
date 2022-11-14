@@ -1,0 +1,92 @@
+contact:
+  name: Pritam Prasad
+  mail: mail@pritam.dev
+  phone: +91-9577841342
+  github: pritamprasd
+  linkedin: pritamprasd
+  website: pritam.dev  
+introduction:
+  - Web Developer ~7.5 years exp.
+  - Have worked in healthcare, Fintech and Privacy-focused industries.
+tech_stack:
+  - type: Primary
+    skill: Python, Java, Rust | Spring-boot, Flask, ReactJS
+  - type: Secondary
+    skill: Go, JS, Solidity, C#, Shell-script | FastApi 
+  - type: Persistance & Messaging
+    skill: Postgresql, Redis, Elasticsearch, DynamoDB, Cassandra | Redis-Pubsub, SQS, RabbitMQ
+  - type: Cloud
+    skill: AWS, Cloud-Foundry, GCP(basic), Cloudflare
+  - type: Security
+    skill: OAuth2, OIDC, ECC-cryptosystem, Keycloak, cert-based auth. 
+  - type: Others
+    skill: OpenAPI, GraphQL, gRPC(basic), Docker-Compose, Terraform, K8s(basic), Gitlab-pipeline, Jenkins, Github-Actions, Celery, ELK/Grafana
+
+work_experience:
+  - org_name: Houm Technologies(houm.me)
+    dept: Engineering
+    role: Product Developer
+    from: Jun-2022
+    to: Sep-2022
+    location: Remote/Mumbai
+    desc:
+      - Leading the backend team and synchronizing with freelancing devops team.
+      - Product conception R&D, solution design, sync with UX team and leading tech on FE/BE/Infra, release management of period tracker module.
+      - Nimzo(subsidiary product) optimizations: db/epp connection leak issues on high load.
+      - Async task decomposing of current user onboarding process. 
+      - Aws optimizations: Route53 rate limitations from certbot cli, 
+      - RFC/PRD/UML-as-code based documentation for all existing and new design-details/decisions/features.
+  - org_name: SETU(setu.co)
+    dept: Investment BU
+    role: SDE-III
+    from: Mar-2021 
+    to: May-2022
+    location: Remote/Bengaluru
+    desc:
+      - Handling multiple supply side Tech integrations (Banks/SFBs), and demand side client based solution design(API, SDK, CLI) 
+      - End to End Design & development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google Spot (Playstore offering), Standalone PWA(default UI offering), Web-SDK, webhook notifications)]
+      - Payment API integartions with various payment stack. 
+      - FD Reconciliation process and lamdba based Automated Reporting service which removed daily ~1Hour manual work.
+      - eKYC/cKYC module re-design(UI & Backend) resulting in 2.5X less load time and ECIES based encryption over HTTPS for PII data.
+      - Monitoring and Alerting Infrastructure setup. 
+      - Multi Tenant DB with expiration policy for User Data storage.
+  - org_name: JP Morgan Chase & Co.
+    dept: Global API Platform
+    role: Associate-602(~ SDE-II/SDE-III)
+    from: Jan-2019
+    to: Mar-2021
+    location: Bengaluru
+    desc:
+      - As individual contributor to Global API Platform and SME for API life cycle mgmt. 
+      - Handling API tooling release life cycle. 
+      - Automatee OpenAPI/Swagger integration with API validators, code generation in spring-boot/python, bdd based testing, IDP integration. 
+      - Mentoring other teams on Firm's API design principles, API-Tooling product demo presentation. 
+  - org_name: Philips Healthcare
+    dept: Radiology Solutions
+    role: Sr. Software Engg(~SDE-II)
+    from: Jun-2015
+    to: Dec-2018
+    location: Bengaluru
+    desc:
+      - Queue based system to authorize 3rd party remote calls to MRI devices.
+      - Design & Development of Distributed protocol sharing & edit/valudation platform for MRI systems. 
+      - API dev, db modeling, role based access control.
+      - Development of secure communication channel between MRI devices and REST API(jsch).
+ 
+projects:
+  - name: Crypto Lending
+    link: https://github.com/pritamprasd/crypto-lending
+    desc: A demo-ready Money Lending platform where collateral are Crypto tokens and loan outcome management(defaulted/repaid) is governed by EVM Smart Contracts. The project also provides configurations to create and manage your own private EVM blockhain with block-chain visualizer integration. It connects lenders to borrowers in a P2P Defi manner.(EVM, Solidity, Flask, ReactJS)
+  - name: ECIES with Flask, ReactJS and WASM
+    link: https://github.com/pritamprasd/poc-encrypt-flask-reactjs
+    desc: An example on how ephemeral asymmetric key based ECIES encryption/decryption can be done between a flask server and a react app. for performance reason a Web-Assembly compiled rust library is used as opposed to a JS lib.(ecc, wasm, js, python, rust)
+  - name: Covid Dashboard
+    link: https://github.com/pritamprasd/covid-dashboard
+    desc: Dashboard to visualize Covid19 India Data, with User login/Registration. Built with ReactJS, SpringBoot, Postgresql.
+
+education:
+  - institute: National Institute of Technology, Silchar
+    degree: B.Tech. (Computer Science & Engineering)
+    from: Jun-2011
+    to: May-2015
+    location: Assam, India

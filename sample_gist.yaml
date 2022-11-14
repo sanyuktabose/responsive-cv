@@ -32,9 +32,9 @@ work_experience:
     desc:
       - Leading the backend team and synchronizing with freelancing devops team.
       - Product conception R&D, solution design, sync with UX team and leading tech on FE/BE/Infra, release management of period tracker module.
-      - Nimzo(subsidiary product) optimizations: db/epp connection leak issues on high load.
+      - Nimzo(subsidiary product) optimizations - db/epp connection leak issues on high load.
       - Async task decomposing of current user onboarding process. 
-      - Aws optimizations: Route53 rate limitations from certbot cli, 
+      - Aws optimizations - Route53 rate limitations from certbot cli, 
       - RFC/PRD/UML-as-code based documentation for all existing and new design-details/decisions/features.
   - org_name: SETU(setu.co)
     dept: Investment BU

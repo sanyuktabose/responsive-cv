@@ -1,12 +1,12 @@
 .page{
     display: grid;
-    grid-template-columns: 7fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas:    "intro  contact"
-                            "work  contact"                                 
-                            "work   skills"
-                            "education education"
-                            "projects projects";                             
-    gap: 0.2rem;
+                            "intro  contact"                                 
+                            "work   work"
+                            "education   skills"
+                            "projects   skills";                             
+    gap: 0.5rem;
     padding: 1rem;
     width: 100vw;
     max-width: 210mm;

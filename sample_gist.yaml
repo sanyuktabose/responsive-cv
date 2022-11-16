@@ -4,38 +4,40 @@ contact:
   phone: +91-9577841342
   github: pritamprasd
   linkedin: pritamprasd
-  website: pritam.dev  
+  website: pritam.dev
 introduction:
-  - Web Developer ~7.5 years exp.
+  - Web Developement & Web Security with ~7.5 years experience.
   - Have worked in healthcare, Fintech and Privacy-focused industries.
 tech_stack:
   - type: Primary
     skill: Python, Java, Rust | Spring-boot, Flask, ReactJS
   - type: Secondary
-    skill: Go, JS, Solidity, C#, Shell-script | FastApi 
+    skill: Go, JS, Solidity, Shell-script | FastApi
   - type: Persistance & Messaging
     skill: Postgresql, Redis, Elasticsearch, DynamoDB, Cassandra | Redis-Pubsub, SQS, RabbitMQ
   - type: Cloud
     skill: AWS, Cloud-Foundry, GCP(basic), Cloudflare
   - type: Security
-    skill: OAuth2, OIDC, ECC-cryptosystem, Keycloak, cert-based auth. 
+    skill: OAuth2, OIDC, ECC-cryptosystem, Keycloak.
+  - type: DevOps
+    skill: Docker, Kubernetes, Gitlab-pipeline, Jenkins, Github-Actions, ELK/Grafana
   - type: Others
-    skill: OpenAPI, GraphQL, gRPC(basic), Docker-Compose, Terraform, K8s(basic), Gitlab-pipeline, Jenkins, Github-Actions, Celery, ELK/Grafana
+    skill: OpenAPI, GraphQL, gRPC(basic), WebAssembly, Celery
 
 work_experience:
-  - org_name: Houm Technologies(houm.me)
+  - org_name: Houm(houm.me)
     dept: Engineering
-    role: Product Developer
+    role: Product Developer & Engg Lead
     from: Jun-2022
     to: Sep-2022
     location: Remote/Mumbai
     desc:
       - Leading the backend team and synchronizing with freelancing devops team.
-      - Product conception R&D, solution design, sync with UX team and leading tech on FE/BE/Infra, release management of period tracker module.
-      - Nimzo(subsidiary product) optimizations - db/epp connection leak issues on high load.
-      - Async task decomposing of current user onboarding process. 
-      - Aws optimizations - Route53 rate limitations from certbot cli, 
-      - RFC/PRD/UML-as-code based documentation for all existing and new design-details/decisions/features.
+      - Product conception(R&D on UX, Solution design), Leading tech on FE/BE/Infra, Release-management for `Women's Period Tracker Module`.
+      - Managing a subsidiary Domain Registry(nimzo98.com) and Optimizing for high traffic(DB connection leaks, EPP connection pool).
+      - Handled migration for User Onboarding from long running blocking tasks to A Celery based task queues(on top of SQS).
+      - Infra(AWS) Optimizations - Route53 rate-limit from certbot-cli, 
+      - Starting RFC/PRD/UML-as-code based documentation culture for dev teams.
   - org_name: SETU(setu.co)
     dept: Investment BU
     role: SDE-III
@@ -43,13 +45,13 @@ work_experience:
     to: May-2022
     location: Remote/Bengaluru
     desc:
-      - Handling multiple supply side Tech integrations (Banks/SFBs), and demand side client based solution design(API, SDK, CLI) 
-      - End to End Design & development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google Spot (Playstore offering), Standalone PWA(default UI offering), Web-SDK, webhook notifications)]
-      - Payment API integartions with various payment stack. 
-      - FD Reconciliation process and lamdba based Automated Reporting service which removed daily ~1Hour manual work.
-      - eKYC/cKYC module re-design(UI & Backend) resulting in 2.5X less load time and ECIES based encryption over HTTPS for PII data.
-      - Monitoring and Alerting Infrastructure setup. 
-      - Multi Tenant DB with expiration policy for User Data storage.
+      - Handling Integrations for multiple supply partners(Banks/SFBs) & various demand-side clients(API/SDK/CLI).
+      - Design & Development of Fixed Deposit(FD) System [ FD-Gateway(API Offering), Google-Spot(Playstore), PWA(Web-UI), Web-SDK, Client webhook notifications]
+      - Payment API integartions with various payment stack[PSPs, Bank-APIs(Axis, Kotak, Equitas), In-house UPI stack].
+      - Reconciliation process development and Automated Reporting service(which removed daily ~1Hour manual work).
+      - eKYC/cKYC module re-design(UI & Backend) [2.5X speedup in page load time], ECIES based custom encryption for PII data.
+      - Multi Tenant DB design with expiration policy for User Data storage. 
+      - Monitoring and Alerting Infrastructure setup(Grafana, Kibana). 
   - org_name: JP Morgan Chase & Co.
     dept: Global API Platform
     role: Associate-602(~ SDE-II/SDE-III)
@@ -57,10 +59,10 @@ work_experience:
     to: Mar-2021
     location: Bengaluru
     desc:
-      - As individual contributor to Global API Platform and SME for API life cycle mgmt. 
-      - Handling API tooling release life cycle. 
-      - Automatee OpenAPI/Swagger integration with API validators, code generation in spring-boot/python, bdd based testing, IDP integration. 
-      - Mentoring other teams on Firm's API design principles, API-Tooling product demo presentation. 
+      - As individual contributor to `Global API Platform Org` & SME for API lifecycle mgmt. 
+      - Release Management for `API tooling` services/plugins/cli.
+      - Automating OpenAPI/Swagger integration with API validators, Code-generation in spring-boot/python, BDD based testing(Cucumber), In-house IdP integration.
+      - Mentoring other teams on Firm's API design principles, API-security principles, API-First design benefits.
   - org_name: Philips Healthcare
     dept: Radiology Solutions
     role: Sr. Software Engg(~SDE-II)
@@ -75,14 +77,14 @@ work_experience:
  
 projects:
   - name: Crypto Lending
-    link: https://github.com/pritamprasd/crypto-lending
-    desc: A demo-ready Money Lending platform where collateral are Crypto tokens and loan outcome management(defaulted/repaid) is governed by EVM Smart Contracts. The project also provides configurations to create and manage your own private EVM blockhain with block-chain visualizer integration. It connects lenders to borrowers in a P2P Defi manner.(EVM, Solidity, Flask, ReactJS)
-  - name: ECIES with Flask, ReactJS and WASM
-    link: https://github.com/pritamprasd/poc-encrypt-flask-reactjs
-    desc: An example on how ephemeral asymmetric key based ECIES encryption/decryption can be done between a flask server and a react app. for performance reason a Web-Assembly compiled rust library is used as opposed to a JS lib.(ecc, wasm, js, python, rust)
+    link: github.com/pritamprasd/crypto-lending
+    desc: A Money Lending platform where collateral are Crypto tokens and loan outcome management(defaulted/repaid) is governed by EVM Smart Contracts. The project also provides configurations to create and manage your own private EVM blockhain. It connects lenders to borrowers in a P2P Defi manner.[EVM, Solidity, Flask, ReactJS]
+  - name: ECIES with Webassembly
+    link: github.com/pritamprasd/poc-encrypt-flask-reactjs
+    desc: An example project on how ephemeral asymmetric key based ECIES encryption can be done between a flask-server and a react-app. For performance reasons Web-Assembly compiled in Rust is used as opposed to plain JS lib.[ECC, WASM, JS, Python, Rust]
   - name: Covid Dashboard
-    link: https://github.com/pritamprasd/covid-dashboard
-    desc: Dashboard to visualize Covid19 India Data, with User login/Registration. Built with ReactJS, SpringBoot, Postgresql.
+    link: github.com/pritamprasd/covid-dashboard
+    desc: Demo Dashboard to visualize Covid19 India Data, with User login/Registration. Built with ReactJS, SpringBoot, Postgresql.
 
 education:
   - institute: National Institute of Technology, Silchar

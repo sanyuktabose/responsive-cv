@@ -1,3 +1,7 @@
+.work-experience{
+    padding-right: 1rem;
+}
+
 .companies{
     display: flex;
     flex-direction: column;
@@ -30,6 +34,7 @@
     flex-direction: column;
     font-size: x-small;
     margin-left: auto;
+    align-items: flex-end;
 }
 
 .company-content{

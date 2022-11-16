@@ -1,8 +1,12 @@
+.contact-details{
+    display: grid;    
+    justify-items: end;
+}
 .contact-details-content {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.25rem;
-    /* gap: 0.25rem; */
+    justify-items: end;
 }
 
 @media only screen and (min-width: 320px) {

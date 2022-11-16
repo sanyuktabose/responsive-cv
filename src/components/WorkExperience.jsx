@@ -8,7 +8,6 @@ export default function WorkExperience({companies}) {
         <div className='companies'>
             {companies.map(c => <Company key={c['org_name']} company={c}/>)}
         </div>
-        <hr className='line'/>
     </div>
   )
 }

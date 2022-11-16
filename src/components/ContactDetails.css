@@ -20,3 +20,16 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .contact-details{
+        display: grid;    
+        justify-items: start;
+    }
+    .contact-details-content {
+        display: grid;
+        grid-template-columns: 1fr;        
+        justify-items: start;
+        gap: 0.3rem;
+    }
+}

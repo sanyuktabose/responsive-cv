@@ -8,7 +8,7 @@
                             "projects  skills  skills";
                           
     /* gap: 0.5rem; */
-    padding: 1rem;
+    padding: 0.75rem;
     width: 100vw;
     max-width: 210mm;
 }
@@ -22,6 +22,7 @@
                                 "projects"
                                 "skills"
                                 "education";
+        gap: 1rem;
     }
 }
 

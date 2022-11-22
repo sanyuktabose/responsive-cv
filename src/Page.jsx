@@ -8,7 +8,7 @@ import Education from './components/Education';
 import TechSkills from './components/TechSkills';
 
 const jsyaml = require('js-yaml');
-const config_url = 'https://gist.githubusercontent.com/pritamprasd/dc5f7deeccc69a21ef288e6903d833c7/raw/028bac4d35368eb74c9bc46640f2836eb95e1d5b/cv.yaml'
+const config_url = 'https://gist.githubusercontent.com/pritamprasd/dc5f7deeccc69a21ef288e6903d833c7/raw/987a7bacb0576dd3f8748b5587c86b2f6c4b2de4/cv.yaml'
 
 export default function Page() {
   const [data, setdata] = useState({

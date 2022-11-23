@@ -8,7 +8,8 @@ import Education from './components/Education';
 import TechSkills from './components/TechSkills';
 
 const jsyaml = require('js-yaml');
-const config_url = 'https://gist.githubusercontent.com/pritamprasd/dc5f7deeccc69a21ef288e6903d833c7/raw/987a7bacb0576dd3f8748b5587c86b2f6c4b2de4/cv.yaml'
+const demoGistId = '95fde56b249662cefda97d303fbfb605';
+const gistId = process.env.REACT_APP_GIST_ID || demoGistId;
 
 export default function Page() {
   const [data, setdata] = useState({
@@ -16,14 +17,17 @@ export default function Page() {
       'name': ""
     }
   });
+
   useEffect(() => {
-    fetch(config_url)
-      .then(res => res.text())
+    fetch(`https://api.github.com/gists/${gistId}`)
+      .then(r => r.json())
+      .then(t => t['files'][Object.keys(t['files'])[0]]['content'])
       .then(yaml => {
         const json = jsyaml.load(yaml);
         setdata(json);
         // console.log(json);
-      }).catch(e => console.error(e));
+      })
+      .catch(e => console.log(`Error: ${e}`))
   }, []);
 
   return (

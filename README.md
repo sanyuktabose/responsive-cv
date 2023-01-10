@@ -25,7 +25,7 @@
         - Check `Add a Readme file` checkbox while creating the repository, this will configure `main` branch.
     4. Create a `Github API Token`. [Settings ->  Developer settings -> Personal access token -> Tokens(classic) -> Generate New Token (classic) -> provide repo access(checkbox in first line of scopes) -> Generate]
     5. Add the token to the forked repository as `API_TOKEN_GITHUB`. [repository Settings Tab -> Secrets -> Actions -> Create new secret -> Name(API_TOKEN_GITHUB), Value(<generated-in-previous-step>)].     
-    6. Update workflows/node.js.yml and make a commit:
+    6. Update below workflows/node.js.yml and make a commit:
         - destination-github-username: <your-github-username>
         - destination-repository-name: <your-github-username>.github.io
         - user-email: <your-email>

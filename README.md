@@ -34,4 +34,4 @@ After the commit, build runs[in a few mins] and your resume will be live at `htt
 
   
 #### Bonus: 
-Create a short link like `https://bit.ly/pritamprasad` in `bit.ly` [Again FREE] and redirect to your Github Page site. 
+Create a short link like `https://bit.ly/examplename` in `bit.ly` [Again FREE] and redirect to your Github Page site. 

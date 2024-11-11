@@ -6,6 +6,7 @@ import './Page.css';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import TechSkills from './components/TechSkills';
+import Certifications from './components/Certification';
 
 const jsyaml = require('js-yaml');
 const demoGistId = '95fde56b249662cefda97d303fbfb605';
@@ -37,6 +38,7 @@ export default function Page() {
       <TechSkills skills={data['tech_stack'] || []} />
       <WorkExperience companies={data['work_experience'] || []} />
       <Projects projects={data['projects'] || []} />
+      <Certifications certs={data['cert'] || []} />
       <Education schools={data['education'] || []} />
     </div>
   );

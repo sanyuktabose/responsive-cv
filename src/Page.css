@@ -4,6 +4,7 @@
     grid-template-areas:    "intro     intro   contact"
                             "intro     intro   contact"                                 
                             "work      work    work"
+                            "cert      cert    cert"
                             "education skills  skills"
                             "projects  skills  skills";
                           
@@ -48,4 +49,8 @@
 
 .education{
     grid-area: education;
+}
+
+.certification-contaner{
+    grid-area: cert;
 }

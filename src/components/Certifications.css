@@ -1,0 +1,24 @@
+.certifications{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.cert-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-link{
+    font-size: x-small;
+    opacity: 0.8;
+}
+
+.cert-desc{
+    font-size: x-small;
+}
+
+.certification-contaner{
+    padding-right: 1rem;
+}
